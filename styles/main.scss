@@ -7,10 +7,24 @@ margin-top: 139px;
 }
 
 html{
-min-height: 100%;
+min-height: 100%; /* pour être sur que la page html prenne toute la hauteur*/
 position: relative;
 }
 
-footer.footer{
-    position: absolute;
+main{margin-bottom: 250px;/* cette marge doit être adapter à la taille de mon footer*/
 }
+
+footer.footer{/* quand mon footer a la classe footer*/
+ display: flex;   /* active Flexbox ,rend l'élément flexible */   
+padding : 15px;   /* espace interne de 15px */
+position: absolute;
+bottom: 0; /* Pour qu'il soit coller en bas*/
+width: 100%; /* pour qu'il prenne toute la largeur de l'écran */
+box-sizing: border-box;
+
+a:hover {
+  text-decoration: underline;  /* effet au survol */
+}
+
+}
+
