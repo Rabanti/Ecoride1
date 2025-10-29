@@ -12044,6 +12044,19 @@ footer.footer { /* quand mon footer a la classe footer*/
   background-color: rgba(67, 40, 24, 0.55);
 }
 
+.BigTitle {
+  text-align: center;
+  margin-top: 41px;
+  width: 100%;
+  border-radius: 22px;
+}
+
+.colonne {
+  border-radius: 22px;
+  background-color: rgba(67, 40, 24, 0.55);
+  text-align: center;
+}
+
 a:hover {
   text-decoration: underline; /* effet au survol */
 }
