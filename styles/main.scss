@@ -1,17 +1,48 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
 
+
+
+//------------------------------BigTitle-----------------
+//----------------------search Bar-------------------------
+.d-flex{
+  display: flex !important;
+  margin: 200px;
+}
+//----------------------search Bar-------------------------
+
 .home-intro {
 text-align: center;
 margin-top: 139px;
-}
+background-color: rgba(67, 40, 24, 0.55);
+width: 100%; /* s’adapte aux écrans plus petits */
+border-radius: 22px;
+}/* #432818 avec 55% d’opacité */
 
+
+
+
+//------------------------------BigTitle-----------------
+
+
+//----------------------------Body-----------------
 html{
 min-height: 100%; /* pour être sur que la page html prenne toute la hauteur*/
 position: relative;
 }
 
+h1{
+  font-family: $font-family-sans-serif;
+}
+
 main{margin-bottom: 250px;/* cette marge doit être adapter à la taille de mon footer*/
+}
+
+
+
+p{
+  font-family: $font-family-serif;
+  font-size: 18px;
 }
 
 footer.footer{/* quand mon footer a la classe footer*/
@@ -21,10 +52,45 @@ position: absolute;
 bottom: 0; /* Pour qu'il soit coller en bas*/
 width: 100%; /* pour qu'il prenne toute la largeur de l'écran */
 box-sizing: border-box;
+}
+
+.images{
+border-radius: 22px;
+display: flex;
+justify-content: center; /* centre horizontalement les images */
+gap: 78px;               /* espace égal entre les images */
+padding: 0 20px;         /* marge égale à gauche et à droite */
+flex-wrap: wrap;
+img {
+  max-width: 100%;          /* responsive */
+  width: 200px;             /* largeur fixe */
+  border-radius: 10px;
+}
+
+}
+//----------------------Covoiturages-----------------------------------
+.trajet{
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: -37px;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  padding: 80px;
+  background-color: rgba(67, 40, 24, 0.55);
+}
+
+
+//----------------------------Body-----------------
+
 
 a:hover {
   text-decoration: underline;  /* effet au survol */
 }
 
+a{
+  text-decoration: none;
 }
+
+
 
