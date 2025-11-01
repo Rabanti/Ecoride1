@@ -85,9 +85,22 @@ img {
 .BigTitle{
   text-align: center;
   margin-top: 41px;
-  width: 100%;
+  margin-left: 200px;
+  margin-right: 200px;
   border-radius: 22px;
+    background-color: rgba(67, 40, 24, 0.55);
 
+}
+
+.ItineraireTitle{
+  margin-bottom: 0px;
+    align-items: center;
+  margin-top: 80px;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  padding: 80px;
+  background-color: rgba(67, 40, 24, 0.55);
 }
 
 .colonne{
@@ -95,6 +108,7 @@ img {
   background-color:rgba(67, 40, 24, 0.55) ;
   text-align: center;
 }
+
 
 
 
@@ -109,5 +123,10 @@ a{
   text-decoration: none;
 }
 
+//-------------------ImageTableau---------------------
+.imgTab{
+  display: flex;
+  max-width: 80px;
+}
 
 
