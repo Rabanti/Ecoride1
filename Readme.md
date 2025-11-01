@@ -11,7 +11,7 @@ Ceci est une plateforme de covoiturage en ligne.
 * Assurez-vous d'avoir Node.js 22.19.0 qui est la version compatible avec le projet et npm version 10.9.3 installés sur votre système 
 * Cloner le repository Git à l'aide de la commande: 
 `git clone https://github.com/Rabanti/Ecoride1.git`  
-
+git status
 ## Installation des dépendances  
 
 * Exécutez la commande `npm install` pour installer les dépendances nécessaires  
