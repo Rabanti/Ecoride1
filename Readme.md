@@ -4,7 +4,7 @@ contient des informations sur mon site
 
 Ceci est une plateforme de covoiturage en ligne.
 
-## Démarche pour déployer l'application en local  
+ ## Démarche pour déployer l'application en local 
 
 ### Étapes préalables  
 
@@ -36,3 +36,26 @@ Etapes d'installations de chacun d'eux:
 
 * Si vous rencontrez des problèmes lors du lancement de l'application, consultez les journaux pour obtenir plus d'informations  
 * Si vous avez des questions ou des problèmes, n'hésitez pas à contacter l'équipe de développement
+
+##  Installation Dockerfile node.js
+ 
+# Utilise l'image officielle Node dans la bonne version
+FROM node:22.19.0
+
+# Définit le dossier de travail dans le conteneur
+WORKDIR /ECORIDE
+
+# Copie les fichiers package.json et package-lock.json
+COPY package*.json ./
+
+# Installe les dépendances du projet
+RUN npm install
+
+# Copie tout le code de l'application
+COPY . .
+
+# Expose le port sur lequel tourne ton application
+EXPOSE 3307
+
+# Commande de démarrage
+CMD ["npm", "start"]
