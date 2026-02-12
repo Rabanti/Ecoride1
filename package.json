@@ -1,7 +1,31 @@
 {
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "bootstrap": "^5.3.8",
-    "bootstrap-icons": "^1.13.1"
-  }
+    "bootstrap-icons": "^1.13.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.6",
+    "mysql2": "^3.16.3"
+  },
+  "name": "ecoride",
+  "version": "1.0.0",
+  "description": "contient des informations sur mon site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rabanti/Ecoride1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rabanti/Ecoride1/issues"
+  },
+  "homepage": "https://github.com/Rabanti/Ecoride1#readme"
 }
-

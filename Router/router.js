@@ -61,4 +61,9 @@ window.onpopstate = LoadContentPage;
 // Assignation de la fonction routeEvent à la propriété route de la fenêtre
 window.route = routeEvent;
 // Chargement du contenu de la page au chargement initial
+document.addEventListener("click", (e) => {
+  if (e.target.matches("[data-link]")) {
+    routeEvent(e);
+  }
+});
 LoadContentPage();

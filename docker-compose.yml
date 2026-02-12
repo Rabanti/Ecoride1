@@ -1,0 +1,35 @@
+services:
+
+  php:
+    build: docker/php
+    container_name: Ecoride_php
+    ports:
+      - 8090:80
+    volumes:
+      - ./:/var/www
+      - ./docker/php/vhosts:/etc/apache2/sites-enabled
+    networks:
+      - Ecoride
+#pour comuniquer avec nos différents composants
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_Ecoride
+    volumes:
+      - ./var/db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: app
+      MYSQL_USER: app
+      MYSQL_PASSWORD: ABCD1234!
+    ports:
+      -  "3309:3306"
+    networks:
+      - Ecoride
+
+
+networks:
+  Ecoride:
+
+volumes:
+  db_data:
